@@ -9,9 +9,6 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
-# Angular
-.angular/
-
 # Visual Studio Code
 .vscode/
 .code-workspace
