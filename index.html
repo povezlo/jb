@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Дешевые автомобильные запчасти</title>
-  <!-- Bootstrap CSS -->
+  <title>Дешеві автомобільні запчастини</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Ваши собственные стили CSS -->
   <link rel="stylesheet" href="styles.css">
-  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Bootstrap JavaScript -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Ваши собственные скрипты JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>>
   <script src="scripts.js"></script>
 </head>
 <body>
-  <!-- Навигационное меню -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">
-      <img src="logo.png" alt="Логотип"> Дешевые запчасти
+      <img src="logo.png" alt="Логотип"> Дешеві запчастини
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,7 +21,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Главная</a>
+          <a class="nav-link" href="#">Головна</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">О нас</a>
@@ -36,111 +30,108 @@
           <a class="nav-link" href="#">Каталог</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Контакты</a>
+          <a class="nav-link" href="#">Контакти</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <!-- Jumbotron -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">Мы найдем любую запчасть для вашего автомобиля.</h1>
-      <p class="lead">Просто отправьте нам сообщение.</p>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Связаться с нами</button>
+      <h1 class="display-4">Ми знайдемо будь-яку запчастину для вашого автомобіля.</h1>
+      <p class="lead">Просто надішліть нам повідомлення.</p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Зв'язатися з нами</button>
     </div>
   </div>
 
-  <!-- Карточки с преимуществами -->
   <div class="container my-5">
-    <h2 class="text-center mb-4">Наши преимущества</h2>
+    <h2 class="text-center mb-4">Наші переваги</h2>
     <div class="card-deck">
       <div class="card">
-        <img src="advantage1.jpg" class="card-img-top" alt="Преимущество 1">
+        <img src="advantage1.jpg" class="card-img-top" alt="Перевага 1">
         <div class="card-body">
-          <h5 class="card-title">Быстрая доставка</h5>
-          <p class="card-text">Мы доставим запчасти в кратчайшие сроки.</p>
+          <h5 class="card-title">Швидка доставка</h5>
+          <p class="card-text">Ми доставимо запчастини в найкоротші терміни.</p>
         </div>
       </div>
       <div class="card">
-        <img src="advantage2.jpg" class="card-img-top" alt="Преимущество 2">
+        <img src="advantage2.jpg" class="card-img-top" alt="Перевага 2">
         <div class="card-body">
-          <h5 class="card-title">Низкие цены</h5>
-          <p class="card-text">У нас лучшие цены на рынке автозапчастей.</p>
+          <h5 class="card-title">Низькі ціни</h5>
+          <p class="card-text">У нас найкращі ціни на ринку автозапчастин.</p>
         </div>
       </div>
       <div class="card">
-        <img src="advantage3.jpg" class="card-img-top" alt="Преимущество 3">
+        <img src="advantage3.jpg" class="card-img-top" alt="Перевага 3">
         <div class="card-body">
-          <h5 class="card-title">Широкий ассортимент</h5>
-          <p class="card-text">В нашем каталоге представлены запчасти для всех моделей автомобилей.</p>
+          <h5 class="card-title">Широкий асортимент</h5>
+          <p class="card-text">У нашому каталозі представлені запчастини для всіх моделей автомобілів.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Форма обратной связи -->
+  <!-- Форма зворотного зв'язку -->
   <div class="container my-5">
-    <h2 class="text-center mb-4">Свяжитесь с нами</h2>
+    <h2 class="text-center mb-4">Зв'яжіться з нами</h2>
     <form>
       <div class="form-group">
-        <label for="name">Имя</label>
-        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+        <label for="name">Ім'я</label>
+        <input type="text" class="form-control" id="name" placeholder="Введіть ваше ім'я">
       </div>
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+        <input type="email" class="form-control" id="email" placeholder="Введіть ваш email">
       </div>
       <div class="form-group">
-        <label for="message">Сообщение</label>
-        <textarea class="form-control" id="message" rows="3" placeholder="Введите ваше сообщение"></textarea>
+        <label for="message">Повідомлення</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Введіть ваше повідомлення"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Отправить</button>
+      <button type="submit" class="btn btn-primary">Відправити</button>
     </form>
   </div>
 
-  <!-- Карусель с отзывами -->
   <div class="container my-5">
-    <h2 class="text-center mb-4">Отзывы наших клиентов</h2>
+    <h2 class="text-center mb-4">Відгуки наших клієнтів</h2>
     <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <blockquote class="blockquote">
-            <p>"Быстрая доставка и качественные запчасти. Рекомендую!"</p>
-            <footer class="blockquote-footer">Иван Петров</footer>
+            <p>"Швидка доставка і якісні запчастини. Рекомендую!"</p>
+            <footer class="blockquote-footer">Іван Петренко</footer>
           </blockquote>
         </div>
         <div class="carousel-item">
           <blockquote class="blockquote">
-            <p>"Отличный сервис и широкий выбор запчастей. Буду обращаться к вам снова!"</p>
-            <footer class="blockquote-footer">Анна Смирнова</footer>
+            <p>"Відмінний сервіс і широкий вибір запчастин. Буду звертатися до вас знову!"</p>
+            <footer class="blockquote-footer">Ана Гуцул</footer>
           </blockquote>
         </div>
         <div class="carousel-item">
           <blockquote class="blockquote">
-            <p>"Нашли редкую запчасть для моего старого автомобиля. Спасибо!"</p>
-            <footer class="blockquote-footer">Михаил Кузнецов</footer>
+            <p>"Знайшли рідкісну запчастину для мого старого автомобіля. Дякую!"</p>
+            <footer class="blockquote-footer">Михаило Стецько</footer>
           </blockquote>
         </div>
       </div>
       <a class="carousel-control-prev" href="#reviewCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Предыдущий</span>
+        <span class="sr-only">Попередній</span>
       </a>
       <a class="carousel-control-next" href="#reviewCarousel" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Следующий</span>
+        <span class="sr-only">Наступний</span>
       </a>
     </div>
   </div>
 
-<!-- Модальное окно для формы обратной связи -->
+<!-- Модальне вікно для форми зворотного зв'язку -->
 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="contactModalLabel">Свяжитесь с нами</h5>
+                <h5 class="modal-title" id="contactModalLabel">Зв'яжіться з нами</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -148,39 +139,39 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <label for="name">Имя</label>
-                        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                        <label for="name">Ім'я</label>
+                        <input type="text" class="form-control" id="name" placeholder="Введіть ваше ім'я">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+                        <input type="email" class="form-control" id="email" placeholder="Введіть ваш email">
                     </div>
                     <div class="form-group">
-                        <label for="message">Сообщение</label>
+                        <label for="message">Повідомлення</label>
                         <textarea class="form-control" id="message" rows="3"
-                            placeholder="Введите ваше сообщение"></textarea>
+                            placeholder="Введіть ваше повідомлення"></textarea>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                <button type="button" class="btn btn-primary">Отправить</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+                <button type="button" class="btn btn-primary">Відправити</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Пагинация -->
+<!-- Пагінація -->
 <div class="container my-5">
-    <h2 class="text-center mb-4">Популярные запчасти</h2>
+    <h2 class="text-center mb-4">Популярні запчастини</h2>
     <div class="row">
         <div class="col-md-4">
             <div class="card">
                 <img src="product1.jpg" class="card-img-top" alt="Продукт 1">
                 <div class="card-body">
-                    <h5 class="card-title">Тормозные колодки</h5>
-                    <p class="card-text">Описание тормозных колодок.</p>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
+                    <h5 class="card-title">Гальмівні колодки</h5>
+                    <p class="card-text">Опис гальмівних колодок.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
                 </div>
             </div>
         </div>
@@ -188,9 +179,9 @@
             <div class="card">
                 <img src="product2.jpg" class="card-img-top" alt="Продукт 2">
                 <div class="card-body">
-                    <h5 class="card-title">Амортизаторы</h5>
-                    <p class="card-text">Описание амортизаторов.</p>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
+                    <h5 class="card-title">Амортизатори</h5>
+                    <p class="card-text">Опис амортизаторів.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
                 </div>
             </div>
         </div>
@@ -198,9 +189,9 @@
             <div class="card">
                 <img src="product3.jpg" class="card-img-top" alt="Продукт 3">
                 <div class="card-body">
-                    <h5 class="card-title">Свечи зажигания</h5>
-                    <p class="card-text">Описание свечей зажигания.</p>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
+                    <h5 class="card-title">Свічки запалювання</h5>
+                    <p class="card-text">Опис свічок запалювання.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
                 </div>
             </div>
         </div>
@@ -208,7 +199,7 @@
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center mt-4">
             <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Предыдущая</a>
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Попередня</a>
             </li>
             <li class="page-item active" aria-current="page">
                 <a class="page-link" href="#">1</a>
@@ -216,44 +207,42 @@
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item">
-                <a class="page-link" href="#">Следующая</a>
+                <a class="page-link" href="#">Наступна</a>
             </li>
         </ul>
     </nav>
 </div>
 
-<!-- Прогресс-бар -->
 <div class="container my-5">
-    <h2 class="text-center mb-4">Наш прогресс</h2>
+    <h2 class="text-center mb-4">Наш прогрес</h2>
     <div class="progress">
         <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
             style="width: 75%;">
-            75% довольных клиентов
+            75% задоволених клієнтів
         </div>
     </div>
 </div>
 
-<!-- Подвал сайта -->
 <footer class="bg-dark text-white py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <h5>О компании</h5>
-                <p>Мы специализируемся на продаже дешевых автомобильных запчастей для всех моделей автомобилей.</p>
+                <h5>Про компанію</h5>
+                <p>Ми спеціалізуємося на продажу дешевих автомобільних запчастин для всіх моделей автомобілів.</p>
             </div>
             <div class="col-md-4">
-                <h5>Ссылки</h5>
+                <h5>Посилання</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Главная</a></li>
+                    <li><a href="#" class="text-white">Головна</a></li>
                     <li><a href="#" class="text-white">О нас</a></li>
                     <li><a href="#" class="text-white">Каталог</a></li>
-                    <li><a href="#" class="text-white">Контакты</a></li>
+                    <li><a href="#" class="text-white">Контакти</a></li>
                 </ul>
             </div>
             <div class="col-md-4">
-                <h5>Контакты</h5>
+                <h5>Контакти</h5>
                 <ul class="list-unstyled">
-                    <li><i class="fas fa-map-marker-alt"></i> 123 Главная улица, Город</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Головна вулиця, Місто</li>
                     <li><i class="fas fa-phone"></i> +7 (123) 456-78-90</li>
                     <li><i class="fas fa-envelope"></i> info@example.com</li>
                 </ul>
@@ -261,15 +250,14 @@
         </div>
         <hr>
         <div class="text-center">
-            <p>&copy; 2023 Дешевые автомобильные запчасти. Все права защищены.</p>
+            <p>&copy; 2023 Дешеві автомобільні запчастини. Усі права захищені.</p>
         </div>
     </div>
 </footer>
 
-<!-- Скрипт для плавной прокрутки -->
+<!-- Скрипт для плавної прокрутки -->
 <script>
     $(document).ready(function () {
-        // Плавная прокрутка к разделам
         $('a[href^="#"]').on('click', function (event) {
             var target = $(this.getAttribute('href'));
             if (target.length) {
