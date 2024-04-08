@@ -31,7 +31,6 @@
     border-color: var(--brand-contrast-color);
     color: var(--text-contrast-color);
 }
-
 .jumbotron {
     height: 100vh;
     background-image: url("../images/banner2.webp");
