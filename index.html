@@ -1,117 +1,261 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Дешеві автомобільні запчастини</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>>
-  <script src="scripts.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./assets//styles/custom.css">
 </head>
+
 <body>
+  <!-- Навігаційне меню -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="logo.png" alt="Логотип"> Дешеві запчастини
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Головна</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">О нас</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Каталог</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Контакти</a>
-        </li>
-      </ul>
+    <div class="container text-center">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/logo.svg" alt="Логотип" width="132" height="auto">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Перемкнути навігацію">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Головна</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Про нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#carparts">Автозапчастини</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Контакти</a>
+          </li>
+        </ul>
+        <ul class="social-links navbar-nav ms-lg-5 ms-0 flex-row justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/example" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item mx-2 mx-md-1">
+              <a class="nav-link" href="https://www.instagram.com/example" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/example" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <div class="jumbotron jumbotron-fluid">
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid text-white">
     <div class="container">
-      <h1 class="display-4">Ми знайдемо будь-яку запчастину для вашого автомобіля.</h1>
-      <p class="lead">Просто надішліть нам повідомлення.</p>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Зв'язатися з нами</button>
-    </div>
-  </div>
-
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Наші переваги</h2>
-    <div class="card-deck">
-      <div class="card">
-        <img src="advantage1.jpg" class="card-img-top" alt="Перевага 1">
-        <div class="card-body">
-          <h5 class="card-title">Швидка доставка</h5>
-          <p class="card-text">Ми доставимо запчастини в найкоротші терміни.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="advantage2.jpg" class="card-img-top" alt="Перевага 2">
-        <div class="card-body">
-          <h5 class="card-title">Низькі ціни</h5>
-          <p class="card-text">У нас найкращі ціни на ринку автозапчастин.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="advantage3.jpg" class="card-img-top" alt="Перевага 3">
-        <div class="card-body">
-          <h5 class="card-title">Широкий асортимент</h5>
-          <p class="card-text">У нашому каталозі представлені запчастини для всіх моделей автомобілів.</p>
+      <div class="row">
+        <div class="col-12 col-lg-6 banner mt-0 mt-sm-5">
+          <div class="banner-container p-3 pt-5 p-md-5">
+            <h1 class="display-4 fw-bold">Дешеві автомобільні запчастини</h1>
+            <p class="lead mt-3 mb-5">Ми знайдемо будь-яку запчастину для вашого автомобіля. <br>Просто надішліть нам повідомлення.
+            </p>
+            <button type="button" class="btn btn-outline-primary btn-lg text fw-bold border-3 p-3" data-toggle="modal"
+              data-target="#contactModal">Зв'яжіться з
+              нами
+            </button>
+          </div>
         </div>
       </div>
     </div>
+    </div>
   </div>
 
-  <!-- Форма зворотного зв'язку -->
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Зв'яжіться з нами</h2>
-    <form>
-      <div class="form-group">
-        <label for="name">Ім'я</label>
-        <input type="text" class="form-control" id="name" placeholder="Введіть ваше ім'я">
+  <!-- Хто ми є --->
+<!-- Кто мы -->
+  <div id="about" class="container-fluid py-5">
+    <div class="row">
+      <div class="col-md-6 position-relative">
+        <img src="./assets/images/whoweare.png" class="img-fluid rounded" alt="Про нас">
       </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Введіть ваш email">
+      <div class="col-md-6">
+        <h2 class="brand-color px-5">Хто ми є</h2>
+        <div class="p-3 p-md-5">
+          <h2 class="mb-4">Професійний продавець автозапчастин з 1999 року</h2>
+          <p class="lead">Ми - SpareParts, одна з найкращих компаній у США, що пропонує найширший вибір запасних частин для автомобілів.
+          запчастин для вашого автомобіля. З самого початку нашого бізнесу в 1999 році нашою метою було допомогти вам знайти
+          потрібні запчастини
+          для вашого автомобіля за доступними цінами. Завдяки нашому сервісу ви можете купити запчастини для будь-якого
+          автомобіля. Ми продаємо
+          запчастини для автомобілів американських, японських та європейських виробників, незалежно від типу кузова та року
+          випуску.
+          випуску. Навіть якщо ваша модель давно знята з виробництва, ми знайдемо для неї запчастини за низькими цінами.
+          Ваш автомобіль завжди буде на ходу!</p>
+
+          <button class="btn btn-primary btn-lg text-lowercase fw-bold border-3 p-3">
+              <a class="nav-link" href="#carparts">
+                ПЕРЕГЛЯНУТИ ДЕТАЛІ
+              </a>
+          </button>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="message">Повідомлення</label>
-        <textarea class="form-control" id="message" rows="3" placeholder="Введіть ваше повідомлення"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Відправити</button>
-    </form>
+    </div>
   </div>
 
+  <!-- Особливості -->
+  <div class="container-fluid py-5 bg-light">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="brand-color px-5">Чому обирають нас</h2>
+        <div class="p-3 p-md-5">
+          <h2 class="mb-4">Професійний продавець автозапчастин з 1999 року</h2>
+          <p class="lead py-3">We are <strong class="brand-color fw-bold">SpareParts</strong>, one of the best companies in the USA offering a great choice
+            of spare parts for your car.</p>
+          <div class="row">
+            <div class="card mb-3 border-0 bg-transparent">
+              <div class="row g-0">
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                  <i class="fas fa-truck fa-3x mb-3 brand-color"></i>
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                      <h5 class="card-title">Швидка доставка</h5>
+                      <p class="card-text">Ми доставимо запчастини в найкоротші терміни.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0 bg-transparent">
+              <div class="row g-0">
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                  <i class="fas fa-dollar-sign fa-3x mb-3 brand-color"></i>
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Низькі ціни</h5>
+                    <p class="card-text">У нас найкращі ціни на ринку автозапчастин.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0 bg-transparent">
+              <div class="row g-0">
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                  <i class="fas fa-box-open fa-3x mb-3 brand-color"></i>
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Широкий асортимент</h5>
+                    <p class="card-text">У нашому каталозі представлені запчастини для всіх моделей автомобілів.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="./assets/images/choose_us.png" class="img-fluid rounded" alt="Features">
+      </div>
+    </div>
+  </div>
+
+  <!-- Категорії -->
+<div class="container my-5">
+  <h2 id="carparts" class="text-center mb-4">Популярні категорії</h2>
+  <div id="categoryCarousel" class="carousel slide carousel-multi-item" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/images/carpart1.png" class="card-img-top rounded" alt="Custom Wheels">
+              <div class="card-body">
+                <h5 class="card-title">Custom Wheels</h5>
+                <p class="card-text">Select the best car wheels of any styles and colors on our website.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/images/carpart2.png" class="card-img-top rounded" alt="Motor Parts">
+              <div class="card-body">
+                <h5 class="card-title">Motor Parts</h5>
+                <p class="card-text">Everything you may need to repair the engine of your vehicle.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/images/carpart3.png" class="card-img-top rounded" alt="Headlights">
+              <div class="card-body">
+                <h5 class="card-title">Headlights</h5>
+                <p class="card-text">Find headlights for any car model at our website at the lowest prices.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4 offset-md-4">
+            <div class="card">
+              <img src="./assets/images/carpart4.png" class="card-img-top rounded" alt="Brakes&Rotor">
+              <div class="card -body">
+                <h5 class="card-title">Brakes&Rotor</h5>
+                <p class="card-text">Remember to check and purchase new high-quality brake discs when needed.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#categoryCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Попередній</span>
+    </a>
+    <a class="carousel-control-next" href="#categoryCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Наступний</span>
+    </a>
+  </div>
+</div>
+
+  <!-- Карусель з відгуками -->
   <div class="container my-5">
     <h2 class="text-center mb-4">Відгуки наших клієнтів</h2>
     <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <blockquote class="blockquote">
-            <p>"Швидка доставка і якісні запчастини. Рекомендую!"</p>
-            <footer class="blockquote-footer">Іван Петренко</footer>
+          <div class="carousel-item active">
+            <blockquote class="blockquote">
+              <p>"Швидка доставка та якісні запчастини. Рекомендую!"</p>
+              <footer class="blockquote-footer">Іван Петров</footer>
+            </blockquote>
+        </div>
+        <div class="carousel-item">
+            <blockquote class="blockquote">
+              <p>"Відмінний сервіс та широкий вибір запчастин. Буду звертатися до вас знову!"</p>
+              <footer class="blockquote-footer">Анна Смирнова</footer>
           </blockquote>
         </div>
         <div class="carousel-item">
-          <blockquote class="blockquote">
-            <p>"Відмінний сервіс і широкий вибір запчастин. Буду звертатися до вас знову!"</p>
-            <footer class="blockquote-footer">Ана Гуцул</footer>
-          </blockquote>
-        </div>
-        <div class="carousel-item">
-          <blockquote class="blockquote">
-            <p>"Знайшли рідкісну запчастину для мого старого автомобіля. Дякую!"</p>
-            <footer class="blockquote-footer">Михаило Стецько</footer>
-          </blockquote>
+            <blockquote class="blockquote">
+              <p>"Знайшли рідкісну запчастину для мого старого автомобіля. Дякую!"</p>
+              <footer class="blockquote-footer">Михайло Кузнецов</footer>
+            </blockquote>
         </div>
       </div>
       <a class="carousel-control-prev" href="#reviewCarousel" role="button" data-slide="prev">
@@ -124,148 +268,105 @@
       </a>
     </div>
   </div>
-
-<!-- Модальне вікно для форми зворотного зв'язку -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+  
+  <!-- Форма зворотного зв'язку -->
+  <div class="container my-5">
+    <h2 id="contacts" class="text-center mb-4">Зв'яжіться з нами</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Ім'я</label>
+        <input type="text" class="form-control" id="name" placeholder="Введіть ваше ім'я">
+      </div>
+      <div class="form-group">
+        <label for="email">Електронна пошта</label>
+        <input type="email" class="form-control" id="email" placeholder="Введіть вашу електронну пошту">
+      </div>
+      <div class="form-group">
+        <label for="message">Повідомлення</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Введіть ваше повідомлення"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Надіслати</button>
+    </form>
+  </div>
+  
+  <!-- Модальне вікно для форми зворотного зв'язку -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="contactModalLabel">Зв'яжіться з нами</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Ім'я</label>
-                        <input type="text" class="form-control" id="name" placeholder="Введіть ваше ім'я">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Введіть ваш email">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Повідомлення</label>
-                        <textarea class="form-control" id="message" rows="3"
-                            placeholder="Введіть ваше повідомлення"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
-                <button type="button" class="btn btn-primary">Відправити</button>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Зв'яжіться з нами</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Закрити">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Ім'я</label>
+              <input type="text" class="form-control" id="name" placeholder="Введіть ваше ім'я">
+            </div>
+            <div class="form-group">
+              <label for="email">Електронна пошта</label>
+              <input type="email" class="form-control" id="email" placeholder="Введіть вашу електронну пошту">
+            </div>
+            <div class="form-group">
+              <label for="message">Повідомлення</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Введіть ваше повідомлення"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+          <button type="button" class="btn btn-primary">Надіслати</button>
+        </div>
+      </div>
     </div>
-</div>
-
-<!-- Пагінація -->
-<div class="container my-5">
-    <h2 class="text-center mb-4">Популярні запчастини</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <img src="product1.jpg" class="card-img-top" alt="Продукт 1">
-                <div class="card-body">
-                    <h5 class="card-title">Гальмівні колодки</h5>
-                    <p class="card-text">Опис гальмівних колодок.</p>
-                    <a href="#" class="btn btn-primary">Детальніше</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="product2.jpg" class="card-img-top" alt="Продукт 2">
-                <div class="card-body">
-                    <h5 class="card-title">Амортизатори</h5>
-                    <p class="card-text">Опис амортизаторів.</p>
-                    <a href="#" class="btn btn-primary">Детальніше</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="product3.jpg" class="card-img-top" alt="Продукт 3">
-                <div class="card-body">
-                    <h5 class="card-title">Свічки запалювання</h5>
-                    <p class="card-text">Опис свічок запалювання.</p>
-                    <a href="#" class="btn btn-primary">Детальніше</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center mt-4">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Попередня</a>
-            </li>
-            <li class="page-item active" aria-current="page">
-                <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Наступна</a>
-            </li>
-        </ul>
-    </nav>
-</div>
-
-<div class="container my-5">
-    <h2 class="text-center mb-4">Наш прогрес</h2>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-            style="width: 75%;">
-            75% задоволених клієнтів
-        </div>
-    </div>
-</div>
-
-<footer class="bg-dark text-white py-5">
+  </div>
+  
+  <!-- Підвал сайту -->
+  <footer class="bg-dark text-white py-5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h5>Про компанію</h5>
-                <p>Ми спеціалізуємося на продажу дешевих автомобільних запчастин для всіх моделей автомобілів.</p>
-            </div>
-            <div class="col-md-4">
-                <h5>Посилання</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Головна</a></li>
-                    <li><a href="#" class="text-white">О нас</a></li>
-                    <li><a href="#" class="text-white">Каталог</a></li>
-                    <li><a href="#" class="text-white">Контакти</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>Контакти</h5>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-map-marker-alt"></i> 123 Головна вулиця, Місто</li>
-                    <li><i class="fas fa-phone"></i> +7 (123) 456-78-90</li>
-                    <li><i class="fas fa-envelope"></i> info@example.com</li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Про компанію</h5>
+          <p>Ми спеціалізуємося на продажу дешевих автомобільних запчастин для всіх моделей автомобілів.</p>
         </div>
-        <hr>
-        <div class="text-center">
-            <p>&copy; 2023 Дешеві автомобільні запчастини. Усі права захищені.</p>
+        <div class="col-md-4">
+          <h5>Посилання</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Головна</a></li>
+            <li><a href="#" class="text-white">Про нас</a></li>
+            <li><a href="#" class="text-white">Каталог</a></li>
+            <li><a href="#" class="text-white">Контакти</a></li>
+          </ul>
         </div>
+        <div class="col-md-4">
+          <h5>Контакти</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Головна вулиця, Місто</li>
+            <li><i class="fas fa-phone"></i> +38 (123) 456-78-90</li>
+            <li><i class="fas fa-envelope"></i> info@example.com</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p>&copy; 2023 Дешеві автомобільні запчастини. Всі права захищені.</p>
+      </div>
     </div>
-</footer>
+  </footer>
 
-<!-- Скрипт для плавної прокрутки -->
-<script>
-    $(document).ready(function () {
-        $('a[href^="#"]').on('click', function (event) {
-            var target = $(this.getAttribute('href'));
-            if (target.length) {
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-            }
-        });
-    });
-</script>
+    <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  
+  <!-- Ваші власні скрипти JS -->
+  <script src="scripts.js"></script>
+</body>
+
+</html>

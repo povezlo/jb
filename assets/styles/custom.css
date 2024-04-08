@@ -1,0 +1,59 @@
+
+:root {
+    --brand-color: #e53e2b;
+    --brand-contrast-color: #fff;
+    --text-color: #252525;
+    --text-contrast-color: #fff;
+}
+
+.btn-outline-primary {
+    background-color: var(--brand-color);
+    border-color: var(--brand-contrast-color);
+    color: var(--text-contrast-color);
+    border-radius: 0;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--brand-contrast-color);
+    border-color: var(--brand-contrast-color);
+    color: var(--text-color);
+}
+
+.btn-primary {
+    background-color: var(--brand-contrast-color);
+    border-color: var(--brand-color);
+    color: var(--text-color);
+    border-radius: 0;
+}
+
+.btn-primary:hover {
+    background-color: var(--brand-color);
+    border-color: var(--brand-contrast-color);
+    color: var(--text-contrast-color);
+}
+
+.jumbotron {
+    height: 100vh;
+    background-image: url("../images/banner2.webp");
+    background-size: cover;
+}
+
+.brand-color {
+    color: var(--brand-color);
+}
+
+.banner {
+    background-color: var(--brand-color);
+    height: auto;
+    opacity: 92%;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 100vh;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--brand-color);
+}
