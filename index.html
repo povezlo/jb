@@ -67,9 +67,9 @@
             <h1 class="display-4 fw-bold">Дешеві автомобільні запчастини</h1>
             <p class="lead mt-3 mb-5">Ми знайдемо будь-яку запчастину для вашого автомобіля. <br>Просто надішліть нам повідомлення.
             </p>
-            <button type="button" class="btn btn-outline-primary btn-lg text fw-bold border-3 p-3" data-toggle="modal"
-              data-target="#contactModal">Зв'яжіться з
-              нами
+            <button type="button" class="btn btn-outline-primary btn-lg text fw-bold border-3 p-3" data-bs-toggle="modal"
+              data-bs-target="#contactModal">
+              Зв'яжіться з нами
             </button>
           </div>
         </div>
@@ -170,14 +170,14 @@
 
   <!-- Категорії -->
 <div class="container my-5">
-  <h2 id="carparts" class="text-center mb-4">Популярні категорії</h2>
+  <h2 class="text-center brand-color mb-5">Популярні категорії</h2>
   <div id="categoryCarousel" class="carousel slide carousel-multi-item" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
         <div class="row">
           <div class="col-md-4">
-            <div class="card">
-              <img src="./assets/images/carpart1.png" class="card-img-top rounded" alt="Custom Wheels">
+            <div class="card rounded-0">
+              <img src="./assets/images/carpart1.png" alt="Custom Wheels">
               <div class="card-body">
                 <h5 class="card-title">Custom Wheels</h5>
                 <p class="card-text">Select the best car wheels of any styles and colors on our website.</p>
@@ -186,8 +186,8 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
-              <img src="./assets/images/carpart2.png" class="card-img-top rounded" alt="Motor Parts">
+            <div class="card rounded-0">
+              <img src="./assets/images/carpart2.png" alt="Motor Parts">
               <div class="card-body">
                 <h5 class="card-title">Motor Parts</h5>
                 <p class="card-text">Everything you may need to repair the engine of your vehicle.</p>
@@ -196,8 +196,8 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
-              <img src="./assets/images/carpart3.png" class="card-img-top rounded" alt="Headlights">
+            <div class="card rounded-0">
+              <img src="./assets/images/carpart3.png" alt="Headlights">
               <div class="card-body">
                 <h5 class="card-title">Headlights</h5>
                 <p class="card-text">Find headlights for any car model at our website at the lowest prices.</p>
@@ -209,12 +209,32 @@
       </div>
       <div class="carousel-item">
         <div class="row">
-          <div class="col-md-4 offset-md-4">
-            <div class="card">
-              <img src="./assets/images/carpart4.png" class="card-img-top rounded" alt="Brakes&Rotor">
-              <div class="card -body">
-                <h5 class="card-title">Brakes&Rotor</h5>
-                <p class="card-text">Remember to check and purchase new high-quality brake discs when needed.</p>
+          <div class="col-md-4">
+            <div class="card rounded-0">
+              <img src="./assets/images/carpart4.png" alt="Headlights">
+              <div class="card-body">
+                <h5 class="card-title">Headlights</h5>
+                <p class="card-text">Find headlights for any car model at our website at the lowest prices.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card rounded-0">
+              <img src="./assets/images/carpart5.webp" alt="Headlights">
+              <div class="card-body">
+                <h5 class="card-title">Headlights</h5>
+                <p class="card-text">Find headlights for any car model at our website at the lowest prices.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card rounded-0">
+              <img src="./assets/images/carpart6.webp" alt="Headlights">
+              <div class="card-body">
+                <h5 class="card-title">Headlights</h5>
+                <p class="card-text">Find headlights for any car model at our website at the lowest prices.</p>
                 <a href="#" class="btn btn-primary">Learn More</a>
               </div>
             </div>
@@ -222,16 +242,122 @@
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#categoryCarousel" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#categoryCarousel" role="button" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Попередній</span>
     </a>
-    <a class="carousel-control-next" href="#categoryCarousel" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#categoryCarousel" role="button" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Наступний</span>
     </a>
   </div>
 </div>
+
+  <!-- Наши автозапчастини -->
+  <div class="container my-5">
+    <h2 id="carparts" class="text-center brand-color my-5 pt-5">Наши автозапчастини</h2>
+    <div class="row product-cards">
+      <div class="col-md-4 mb-4">
+        <div class="card rounded-0 product-card">
+          <div class="card-img">
+            <img src="./assets/images/product1.webp" class="card-img-top" alt="АМОРТИЗАТОР ПЕРЕДНІЙ RAISO">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">АМОРТИЗАТОР ПЕРЕДНІЙ RAISO</h5>
+            <p class="card-text">(ШВЕЦІЯ) RENAULT CLIO IV, РЕНО КЛІО 4 12- #RS317423 UAJLJIC14</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card rounded-0 product-card">
+          <div class="card-img">
+            <img src="./assets/images/product2.webp" class="card-img-top" alt="ВІДБІЙНИК РЕСОРИ">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">ВІДБІЙНИК РЕСОРИ</h5>
+            <p class="card-text">(122MM) RAISO (ШВЕЦІЯ) VOLKSWAGEN CADDY (ГРУЗ.) 2004- #RK11153 UAWYDNC14</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card rounded-0 product-card">
+          <div class="card-img">
+            <img src="./assets/images/product3.webp" class="card-img-top" alt="ПРУЖИНА ПЕРЕДНЯ RAISO">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">ПРУЖИНА ПЕРЕДНЯ RAISO</h5>
+            <p class="card-text">(ШВЕЦІЯ) FIAT DUCATO/PEUGEOT BOXER, ФІАТ ДУКАТО/ПЕЖО БОКСЕР 02-06 #SF083TP UANGEDX14</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card rounded-0 product-card">
+          <div class="card-img">
+            <img src="./assets/images/product4.webp" class="card-img-top" alt="КОМПЛЕКТ ВАЖЕЛІВ ПЕРЕДНЬОЇ ПІДВІСКИ">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">КОМПЛЕКТ ВАЖЕЛІВ ПЕРЕДНЬОЇ ПІДВІСКИ</h5>
+            <p class="card-text">RAISO (ШВЕЦІЯ) VOLKSWAGEN PHAETON ФОЛЬКСВАГЕН ФАЕТОН 2002-2016 UADIKLV14</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card rounded-0 product-card">
+          <div class="card-img">
+            <img src="./assets/images/product5.webp" class="card-img-top" alt="ОПОРА ЗАДНЬОГО АМОРТИЗАТОРА RAISO"> 
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">ОПОРА ПЕРЕДНЬОГО ЛІВОГО АМОРТИЗАТОРА</h5>
+            <p class="card-text">(З ПІДШИПНИКОМ) RAISO (ШВЕЦІЯ) DEAWOO LANOS #RС01020 UADOPNF14</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card rounded-0 product-card">
+          <div class="card-img">
+            <img src="./assets/images/product7.webp" class="card-img-top" alt="АМОРТИЗАТОР ПЕРЕДНІЙ RAISO">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">ОПОРА ЗАДНЬОГО АМОРТИЗАТОРА RAISO</h5>
+            <p class="card-text">(ШВЕЦІЯ) BMW 5 (E39) 1995-2003 #RС05251 UAUPFWR14</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card rounded-0 product-card">
+          <div class="card-img">
+            <img src="./assets/images/product7.webp" class="card-img-top" alt="АМОРТИЗАТОР ПЕРЕДНІЙ RAISO">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">АМОРТИЗАТОР ПЕРЕДНІЙ RAISO</h5>
+            <p class="card-text">(ШВЕЦІЯ) MERCEDES-BENZ C-CLASS (W204), МЕРСЕДЕС Ц-КЛАС</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item prev-page disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Назад</a>
+        </li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item next-page">
+          <a class="page-link" href="#">Вперед</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
   <!-- Карусель з відгуками -->
   <div class="container my-5">
@@ -335,9 +461,9 @@
           <h5>Посилання</h5>
           <ul class="list-unstyled">
             <li><a href="#" class="text-white">Головна</a></li>
-            <li><a href="#" class="text-white">Про нас</a></li>
-            <li><a href="#" class="text-white">Каталог</a></li>
-            <li><a href="#" class="text-white">Контакти</a></li>
+            <li><a href="#about" class="text-white">Про нас</a></li>
+            <li><a href="#carparts" class="text-white">Автозапчастини</a></li>
+            <li><a href="#contacts" class="text-white">Контакти</a></li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -357,14 +483,14 @@
   </footer>
 
     <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
-  <!-- Ваші власні скрипти JS -->
   <script src="scripts.js"></script>
 </body>
 

@@ -56,3 +56,12 @@
 .navbar-light .navbar-nav .nav-link:hover {
     color: var(--brand-color);
 }
+
+.product-card {
+    height: 35rem;
+}
+
+.product-card .card-img {
+    max-width: 25rem;
+    object-fit: cover;
+}
