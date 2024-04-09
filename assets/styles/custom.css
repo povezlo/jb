@@ -31,6 +31,7 @@
     border-color: var(--brand-contrast-color);
     color: var(--text-contrast-color);
 }
+
 .jumbotron {
     height: 100vh;
     background-image: url("../images/banner2.webp");
@@ -41,18 +42,70 @@
     color: var(--brand-color);
 }
 
-.banner {
+.bg-brand-color {
     background-color: var(--brand-color);
+}
+
+.banner {
     height: auto;
     opacity: 92%;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--brand-color);
+}
+
+#categoryCarousel .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#categoryCarousel .card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#categoryCarousel .card .card-text {
+    flex-grow: 1;
+}
+
+#categoryCarousel .card .btn {
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.product-card {
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .card-body .card-text {
+    flex-grow: 1;
+}
+
+.product-card .card-img img {
+    max-width: 15rem;
+}
+
+.progress {
+    height: 2rem;
 }
 
 @media screen and (max-width: 768px) {
     .banner {
         height: 100vh;
     }
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: var(--brand-color);
+    
+    .product-card {
+        height: 100%;
+    }
 }
